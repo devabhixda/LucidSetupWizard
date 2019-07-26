@@ -62,8 +62,6 @@ import com.lucid.setupwizard.SimMissingActivity;
 import com.lucid.setupwizard.WifiSetupActivity;
 import com.lucid.setupwizard.wizardmanager.WizardManager;
 
-import org.lineageos.internal.util.PackageManagerUtils;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -169,8 +167,8 @@ public class SetupWizardUtils {
     }
 
     public static boolean hasGMS(Context context) {
-        if (PackageManagerUtils.isAppInstalled(context, GMS_PACKAGE) &&
-                PackageManagerUtils.isAppInstalled(context, GMS_SUW_PACKAGE)) {
+        if (isPackageInstalled(context, GMS_PACKAGE) &&
+                isPackageInstalled(context, GMS_SUW_PACKAGE)) {
             PackageManager packageManager = context.getPackageManager();
             if (LOGV) {
                 Log.v(TAG, GMS_SUW_PACKAGE + " state = " +
