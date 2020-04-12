@@ -19,12 +19,12 @@
     android:id="@+id/header"
     android:layout_width="match_parent"
     android:layout_height="@dimen/header_condensed_height"
-    android:paddingTop="48dp"
+    android:paddingTop="64dp"
     android:orientation="vertical">
 
     <ImageView
         android:id="@+id/header_icon"
-        android:layout_width="64dp"
+        android:layout_width="48dp"
         android:layout_height="wrap_content"
         android:paddingStart="8dp"
         android:paddingEnd="8dp"
@@ -41,7 +41,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="64dp"
-            android:typeface="monospace"
+	    android:fontFamily="@string/defaultfont"
             android:gravity="center"
             android:maxLines="1"
             android:ellipsize="end"
