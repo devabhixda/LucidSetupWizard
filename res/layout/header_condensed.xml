@@ -29,19 +29,23 @@
         android:paddingStart="8dp"
         android:paddingEnd="8dp"
         android:adjustViewBounds="true"
-        android:scaleType="centerInside"
+        android:scaleType="fitXY"
         android:visibility="gone"
-        android:contentDescription="@null" />
+        android:contentDescription="@null"
+ 	android:layout_centerInParent="true"/>
 
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="64dp"
-        android:layout_toEndOf="@id/header_icon"
-        android:paddingEnd="8dp"
-        android:typeface="monospace"
-        android:gravity="center_vertical"
-        android:maxLines="1"
-        android:ellipsize="end"
-        style="@style/PageTitle" />
-
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header_icon">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:typeface="monospace"
+            android:gravity="center"
+            android:maxLines="1"
+            android:ellipsize="end"
+            style="@style/PageTitle"
+            android:layout_gravity="center"/>
+    </LinearLayout>
 </RelativeLayout>
