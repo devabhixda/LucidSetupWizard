@@ -49,6 +49,7 @@
                     android:paddingRight="@dimen/content_margin_right"
                     style="@style/PageSummaryText"
                     android:text="@string/services_explanation"
+		    android:fontFamily="@string/defaultfont"
                     android:clickable="true"/>
 
                 <!-- Whether or not to enable metrics -->
@@ -83,6 +84,7 @@
                         android:layout_marginLeft="@dimen/location_text_margin_left"
                         android:layout_marginRight="@dimen/location_text_margin_right"
                         android:paddingBottom="@dimen/content_margin_bottom"
+			android:fontFamily="@string/defaultfont"
                         android:text="@string/services_metrics_label"/>
 
                 </LinearLayout>
@@ -119,6 +121,7 @@
                         android:layout_marginLeft="@dimen/location_text_margin_left"
                         android:layout_marginRight="@dimen/location_text_margin_right"
                         android:paddingBottom="@dimen/content_margin_bottom"
+			android:fontFamily="@string/defaultfont"
                         android:text="@string/services_os_nav_keys_label"/>
 
                 </LinearLayout>

@@ -22,5 +22,6 @@
     <bool name="check_custom_theme_by_default">true</bool>
     <string name="wizard_script_uri" translatable="false">android.resource://com.lucid.setupwizard/raw/wizard_script</string>
     <string name="wizard_script_user_uri" translatable="false">android.resource://com.lucid.setupwizard/raw/wizard_script_user</string>
+    <string name="defaultfont">Slate</string>
 
 </resources>

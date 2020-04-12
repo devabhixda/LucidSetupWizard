@@ -27,6 +27,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:minHeight="16dip"
+	android:fontFamily="@string/defaultfont"
         style="@style/SpinnerItem" />
 
     <TextView
@@ -36,6 +37,6 @@
         android:minHeight="10dip"
         android:layout_below="@android:id/text1"
         android:layout_alignStart="@android:id/text1"
-        android:fontFamily="sans-serif-medium"
+        android:fontFamily="@string/defaultfont"
         style="@style/SpinnerItem" />
 </TwoLineListItem>
