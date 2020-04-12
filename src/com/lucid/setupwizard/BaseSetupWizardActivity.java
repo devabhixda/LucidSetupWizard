@@ -111,6 +111,7 @@ public abstract class BaseSetupWizardActivity extends Activity implements Naviga
             mNavigationBar.setSystemUiVisibility(mSystemUiFlags);
             // Set the UI flags before draw because the visibility might change in unexpected /
             // undetectable times, like transitioning from a finishing activity that had a keyboard
+	    mNavigationBar.setBackgroundColor(getResources().getColor(R.color.white));
             ViewTreeObserver viewTreeObserver = mNavigationBar.getViewTreeObserver();
             viewTreeObserver.addOnPreDrawListener(this);
         }
